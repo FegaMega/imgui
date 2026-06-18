@@ -41,14 +41,14 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(ProjectDir)bin\Debug-windows-x86_64\ImGui\</OutDir>
-    <IntDir>$(ProjectDir)bin-int\Debug-windows-x86_64\ImGui\</IntDir>
+    <OutDir>$(ProjectDir)..\stb_image\bin\Debug-windows-x86_64\ImGui\</OutDir>
+    <IntDir>$(ProjectDir)..\stb_image\bin-int\Debug-windows-x86_64\ImGui\</IntDir>
     <TargetName>ImGui</TargetName>
     <TargetExt>.lib</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(ProjectDir)bin\Release-windows-x86_64\ImGui\</OutDir>
-    <IntDir>$(ProjectDir)bin-int\Release-windows-x86_64\ImGui\</IntDir>
+    <OutDir>$(ProjectDir)..\stb_image\bin\Release-windows-x86_64\ImGui\</OutDir>
+    <IntDir>$(ProjectDir)..\stb_image\bin-int\Release-windows-x86_64\ImGui\</IntDir>
     <TargetName>ImGui</TargetName>
     <TargetExt>.lib</TargetExt>
   </PropertyGroup>
@@ -87,6 +87,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\stb_image\stb_image.h" />
     <ClInclude Include="imconfig.h" />
     <ClInclude Include="imgui.h" />
     <ClInclude Include="imgui_internal.h" />
@@ -95,6 +96,7 @@
     <ClInclude Include="imstb_truetype.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\stb_image\stb_image.cpp" />
     <ClCompile Include="imgui.cpp" />
     <ClCompile Include="imgui_demo.cpp" />
     <ClCompile Include="imgui_draw.cpp" />
